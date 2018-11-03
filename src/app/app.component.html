@@ -1,5 +1,6 @@
 <div class="wrapper mat-app-background mat-typography" [ngClass]="themeClass">
   <h1>Sorted Table Demo</h1>
+  <h2>Options</h2>
   <div class="control">
     <mat-radio-group [(ngModel)]="themeClass">
       <mat-radio-button value="app-light-theme">Light theme</mat-radio-button>
@@ -12,8 +13,10 @@
   <div class="control">
     <mat-checkbox [(ngModel)]="disableClear">Disable clear</mat-checkbox>
   </div>
+  <h2>Component</h2>
   <ngmat-sorted-table [headers]="headers1" [rows]="rows1" [indexColumn]="indexColumn" [sortActive]="sortActive"
     [sortDirection]="sortDirection" [disableClear]="disableClear" (sort)="onSort($event)" (sortStart)="onSortStart()"
     (sortEnd)="onSortEnd()"></ngmat-sorted-table>
+  <h2 *ngIf="events.length > 0">Events Emitted</h2>
   <p class="mat-small log-entry" *ngFor="let event of events">{{event}}</p>
 </div>
