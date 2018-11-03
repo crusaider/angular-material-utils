@@ -42,7 +42,7 @@ export class AppComponent {
 
   private logEvent(msg: string) {
     this.events.unshift(`${this.eventCounter++}: ${msg}`);
-    if (this.events.length > 10) {
+    if (this.events.length > 20) {
       this.events.pop();
     }
   }

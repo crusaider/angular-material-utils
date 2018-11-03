@@ -1,14 +1,19 @@
 import { AppPage } from './app.po';
 
-describe('workspace-project App', () => {
+describe('Demo App', () => {
   let page: AppPage;
 
   beforeEach(() => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
+  it('should display page main heading', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to ngmat-sorted-table!');
+    expect(page.getHeadingText()).toEqual('Sorted Table Demo');
+  });
+
+  it('should have a table component', () => {
+    page.navigateTo(),
+      expect(page.getTableComponentElement().isDisplayed()).toBeTruthy();
   });
 });
