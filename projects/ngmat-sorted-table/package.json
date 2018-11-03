@@ -1,0 +1,29 @@
+{
+  "name": "ngmat-sorted-table",
+  "version": "0.0.2",
+  "license": "MIT",
+  "keywords": [
+    "angular",
+    "material",
+    "angular material",
+    "table",
+    "component",
+    "sort",
+    "theming"
+  ],
+  "description": "Angular Material component for rendering tabular data and allow the user to sort the data per column.",
+  "author": {
+    "name": "Jonas Andreasson",
+    "email": "jonas.m.andreasson@gmail.com",
+    "url": "https://twitter.com/Crusaider"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/crusaider/ngmat-sorted-table"
+  },
+  "peerDependencies": {
+    "@angular/common": "^7.0.0",
+    "@angular/core": "^7.0.0",
+    "@angular/material": "~7.0.2"
+  }
+}

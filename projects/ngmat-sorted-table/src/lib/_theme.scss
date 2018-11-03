@@ -1,0 +1,22 @@
+@import '~@angular/material/theming';
+
+@mixin ngmat-sorted-table-theme($theme) {
+  $primary: map-get($theme, primary);
+
+  ngmat-sorted-table {
+    th {
+      color:mat-color($primary,default-contrast);
+      background-color: mat-color($primary,default);
+      .mat-sort-header-arrow {
+      color:mat-color($primary,default-contrast);
+      }
+    }
+
+    tr:nth-child(odd) {
+      background-color: mat-color($primary,default, 0.2);
+    }
+    tr:nth-child(even) {
+      background-color: mat-color($primary,default, 0.4);
+    }
+  }
+}
