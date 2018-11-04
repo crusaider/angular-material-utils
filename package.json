@@ -8,6 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
+    "test-library": "ng test ngmat-sorted-table",
     "build-library": "ng build ngmat-sorted-table && npm run copy-theme",
     "copy-theme": "copyfiles --flat ./projects/ngmat-sorted-table/src/lib/_theme.scss ./dist/ngmat-sorted-table",
     "copy-readme": "copyfiles --flat ./projects/ngmat-sorted-table/README.md ./dist/ngmat-sorted-table",
