@@ -1,14 +1,12 @@
 import { Component } from '@angular/core';
-import { SortDirection, Sort } from '@angular/material/sort';
+import { Sort } from '@angular/material';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: 'app-sorted-table-demo',
+  templateUrl: './sorted-table-demo.component.html',
+  styleUrls: ['./sorted-table-demo.component.scss']
 })
-export class AppComponent {
-  title = 'Sorted Table Demo';
-
+export class SortedTableDemoComponent {
   headers1 = ['Header 1', 'Header 2', 'Header 3', 'Header 4'];
   rows1 = [
     ['Row 1 Cell 1', 'Row 1 Cell 2', 'Row 1 Cell 3', 'Row 1 Cell 4'],
@@ -42,8 +40,10 @@ export class AppComponent {
 
   private logEvent(msg: string) {
     this.events.unshift(`${this.eventCounter++}: ${msg}`);
+    /*
     if (this.events.length > 20) {
       this.events.pop();
     }
+    */
   }
 }

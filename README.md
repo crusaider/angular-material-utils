@@ -1,4 +1,6 @@
-# NGMAT Sorted Table
+# Angular Material Utils
+
+A set of utility packages for angular (6+) material web applications.
 
 A angular material component to render tabular data, for infomrmaiton about the content of the NPM package see [component readme](projects/ngmat-sorted-table/README.md).
 
@@ -6,10 +8,13 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Project Structure
 
-The repository consists of two distinct projects:
+A set of projects:
 
-1. **ngmat-sorted-table-demo**: A demo and test application instantiating a SortedTable component. The app lives in `src/app`.
-1. **ngmat-sorted-table**: A library implementing the actual npm package. The library lives in `projects/ngmat-sorted-table`-
+**demos-app**: A demo and test application for all the packages in the repo. The app lives in `projects/demos-app`.
+
+The separate packages lives in separate sub projects:
+
+1. **ngmat-sorted-table**: `projects/ngmat-sorted-table`
 
 ## Development server
 

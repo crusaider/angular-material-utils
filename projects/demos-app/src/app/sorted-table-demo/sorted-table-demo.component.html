@@ -1,0 +1,13 @@
+<h1>Sorted Table Demo</h1>
+<h2>Options</h2>
+<div class="control">
+  <mat-checkbox [(ngModel)]="indexColumn">Show index column</mat-checkbox>
+</div>
+<div class="control">
+  <mat-checkbox [(ngModel)]="disableClear">Disable clear</mat-checkbox>
+</div>
+<h2>Component</h2>
+<ngmat-sorted-table [headers]="headers1" [rows]="rows1" [indexColumn]="indexColumn" [disableClear]="disableClear"
+  (sort)="onSort($event)" (sortStart)="onSortStart()" (sortEnd)="onSortEnd()"></ngmat-sorted-table>
+<h2 *ngIf="events.length > 0">Events Emitted</h2>
+<p class="mat-small log-entry" *ngFor="let event of events">{{event}}</p>

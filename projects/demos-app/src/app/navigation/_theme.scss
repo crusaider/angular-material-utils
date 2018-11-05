@@ -1,0 +1,14 @@
+@import '~@angular/material/theming';
+
+@mixin app-navigation-theme($theme) {
+  $accent: map-get($theme, accent);
+
+  // Set color of currently active menu item
+  app-navigation {
+    .active {
+      .mat-list-item-content{
+        color:mat-color($accent,default);
+      }
+    }
+  }
+}

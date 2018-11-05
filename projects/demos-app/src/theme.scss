@@ -1,0 +1,31 @@
+
+@import '~@angular/material/theming';
+
+@import './app/navigation/theme';
+
+@import '../../../dist/ngmat-sorted-table/theme';
+
+
+@include mat-core();
+
+// Define a themes.
+$app-primary: mat-palette($mat-indigo);
+$app-accent:  mat-palette($mat-pink, A200, A100, A400);
+$app-warn:    mat-palette($mat-red);
+$app-light-theme: mat-light-theme($app-primary, $app-accent, $app-warn);
+$app-dark-theme: mat-dark-theme($app-primary, $app-accent, $app-warn);
+
+
+@mixin generate-theme($theme) {
+  @include angular-material-theme($theme);
+  @include app-navigation-theme($theme);
+  @include ngmat-sorted-table-theme($theme);
+}
+
+.app-dark-theme {
+  @include generate-theme($app-dark-theme);
+}
+
+.app-light-theme {
+  @include generate-theme($app-light-theme);
+}
