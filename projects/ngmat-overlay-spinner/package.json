@@ -1,17 +1,16 @@
 {
-  "name": "ngmat-sorted-table",
+  "name": "ngmat-overlay-spinner",
   "version": "1.0.0",
   "license": "MIT",
   "keywords": [
     "angular",
     "material",
     "angular material",
-    "table",
-    "component",
-    "sort",
-    "theming"
+    "spinner",
+    "service",
+    "overlay"
   ],
-  "description": "Angular Material component for rendering tabular data and allow the user to sort the data per column.",
+  "description": "Angular Material service that shows and hides a spinner on a overlay blocking user interactions as long as it is displayed.",
   "author": {
     "name": "Jonas Andreasson",
     "email": "jonas.m.andreasson@gmail.com",

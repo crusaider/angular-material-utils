@@ -1,3 +1,4 @@
+import { OverlaySpinnerDemoComponent } from './overlay-spinner-demo/overlay-spinner-demo.component';
 import { SortedTableDemoComponent } from './sorted-table-demo/sorted-table-demo.component';
 import { HomeComponent } from './navigation/home/home.component';
 import { NgModule } from '@angular/core';
@@ -12,6 +13,11 @@ const routes: Routes = [
     path: 'sorted-table',
     component: SortedTableDemoComponent
   },
+  {
+    path: 'overlay-spinner',
+    component: OverlaySpinnerDemoComponent
+  },
+
   {
     path: '',
     redirectTo: '/home',

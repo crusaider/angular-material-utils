@@ -164,6 +164,39 @@
           }
         }
       }
+    },
+    "ngmat-overlay-spinner": {
+      "root": "projects/ngmat-overlay-spinner",
+      "sourceRoot": "projects/ngmat-overlay-spinner/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ngmat-overlay-spinner/tsconfig.lib.json",
+            "project": "projects/ngmat-overlay-spinner/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngmat-overlay-spinner/src/test.ts",
+            "tsConfig": "projects/ngmat-overlay-spinner/tsconfig.spec.json",
+            "karmaConfig": "projects/ngmat-overlay-spinner/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ngmat-overlay-spinner/tsconfig.lib.json",
+              "projects/ngmat-overlay-spinner/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**"]
+          }
+        }
+      }
     }
   },
   "defaultProject": "demos-app",

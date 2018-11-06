@@ -1,3 +1,4 @@
+import { OverlaySpinnerDemoModule } from './overlay-spinner-demo/overlay-spinner-demo.module';
 import { SortedTableDemoModule } from './sorted-table-demo/sorted-table-demo.module';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
@@ -30,7 +31,8 @@ import { HomeComponent } from './navigation/home/home.component';
     MatIconModule,
     MatListModule,
     SortedTableDemoModule,
-    MatMenuModule
+    MatMenuModule,
+    OverlaySpinnerDemoModule
   ],
   providers: [],
   bootstrap: [AppComponent]

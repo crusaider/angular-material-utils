@@ -1,0 +1,49 @@
+<h1>Overlay Spinner</h1>
+<mat-list>
+  <mat-list-item>
+    <mat-form-field>
+      <mat-select [(ngModel)]="optionsType" placeholder="Configuration">
+        <mat-option value="default">Default</mat-option>
+        <mat-option value="custom">Custom</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </mat-list-item>
+  <ng-container *ngIf="optionsType === 'custom'">
+    <mat-list-item>
+      <mat-form-field>
+        <mat-select [(ngModel)]="mode" placeholder="Mode">
+          <mat-option value="indeterminate">Indeterminate</mat-option>
+          <mat-option value="determinate">Determinate</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </mat-list-item>
+    <mat-list-item>
+      <mat-form-field>
+        <mat-select [(ngModel)]="color" placeholder="Color">
+          <mat-option value="">None</mat-option>
+          <mat-option value="primary">Primary</mat-option>
+          <mat-option value="accent">Accent</mat-option>
+          <mat-option value="warn">Warn</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </mat-list-item>
+    <mat-list-item>
+      <mat-form-field>
+        <input matInput type="number" required placeholder="Diameter (px)" [(ngModel)]="diameter">
+      </mat-form-field>
+    </mat-list-item>
+    <mat-list-item>
+      <mat-form-field>
+        <input matInput type="number" required placeholder="Stroke width (px)" [(ngModel)]="strokeWidth">
+      </mat-form-field>
+    </mat-list-item>
+  </ng-container>
+  <mat-list-item *ngIf="mode === 'indeterminate'">
+    <mat-form-field>
+      <input matInput type="number" required placeholder="Delay (ms)" [(ngModel)]="spinnerDelay">
+    </mat-form-field>
+  </mat-list-item>
+  <mat-list-item>
+    <button mat-raised-button color="accent" (click)="onShowSpinner()">SHOW SPINNER</button>
+  </mat-list-item>
+</mat-list>

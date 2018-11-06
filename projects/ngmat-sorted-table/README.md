@@ -39,6 +39,6 @@ and allows the user to sort the table data by clicking the table headers.
 The component is themed according to angular material [custom component styling guidelines](https://material.angular.io/guide/theming-your-components). To make the component adhere to the applicaiton theme:
 
 1. Include the component theme in the application theme file `@import 'ngmat-sorted-table/theme';`
-1. Incluide the component theme mixin: `@include ngmat-sorted-table-theme($app-dark-theme);`
+1. Include the component theme mixin: `@include ngmat-sorted-table-theme($app-dark-theme);`
 
 Refer to the [demo and example.](https://ngmat-sorted-table-demo.stackblitz.io) for mor information.

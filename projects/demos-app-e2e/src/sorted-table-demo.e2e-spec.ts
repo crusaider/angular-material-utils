@@ -8,7 +8,7 @@ describe('Demo App Sorted Table Demo Page', () => {
   });
 
   it('should have a table component', () => {
-    page.navigateTo(),
-      expect(page.getTableComponentElement().isDisplayed()).toBeTruthy();
+    page.navigateTo();
+    expect(page.getTableComponentElement().isDisplayed()).toBeTruthy();
   });
 });
