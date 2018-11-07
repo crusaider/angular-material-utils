@@ -6,6 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "build-demo": "ng build --project=demos-app --prod",
+    "gh-pages-routes": "node ./gh-pages-routes.js",
+    "build-demo-gh-pages": "ng build --project=demos-app --prod --deploy-url=https://crusaider.github.io/angular-material-utils/ --base-href=/angular-material-utils/ && npm run gh-pages-routes",
     "test": "ng test --project=demos-app",
     "test-libs": "ng test ngmat-sorted-table --watch=false && ng test ngmat-overlay-spinner --watch=false",
     "lint": "ng lint",

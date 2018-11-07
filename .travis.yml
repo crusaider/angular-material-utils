@@ -17,7 +17,7 @@ script:
   - npm run package
   # - xvfb-run npm run e2e
   # - npm run build-demo
-  - ng build --project=demos-app --prod --deploy-url=https://crusaider.github.io/angular-material-utils/ --base-href=/angular-material-utils/
+  - npm run build-demo-gh-pages
 
 deploy:
   provider: pages
