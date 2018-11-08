@@ -1,9 +1,22 @@
 <ng-container *ngIf="(toc$ | async) as toc">
   <h1>Angular Material Utils</h1>
-
-  <ng-container *ngFor="let item of toc">
-    <span class="mat-h2">{{ item.heading }}</span
-    ><a mat-button [routerLink]="'/' + item.slug">Open demo</a>
-    <p>{{ item.description }}</p>
-  </ng-container>
+  <mat-card *ngFor="let item of toc">
+    <mat-card-title>{{ item.heading }}</mat-card-title>
+    <mat-card-content>{{ item.description }}</mat-card-content>
+    <mat-card-actions
+      ><a mat-button [routerLink]="'/' + item.slug">DEMO</a
+      ><a
+        class="action-link"
+        [href]="'https://www.npmjs.com/package/' + item.packageName"
+        >NPM</a
+      ><a
+        class="action-link"
+        [href]="
+          'https://github.com/crusaider/angular-material-utils/tree/master/projects/' +
+          item.packageName
+        "
+        >Source</a
+      ></mat-card-actions
+    >
+  </mat-card>
 </ng-container>

@@ -15,7 +15,8 @@ import {
   MatSidenavModule,
   MatIconModule,
   MatListModule,
-  MatMenuModule
+  MatMenuModule,
+  MatCardModule
 } from '@angular/material';
 import { HomeComponent } from './navigation/home/home.component';
 
@@ -34,7 +35,8 @@ import { HomeComponent } from './navigation/home/home.component';
     SortedTableDemoModule,
     MatMenuModule,
     OverlaySpinnerDemoModule,
-    HttpClientModule
+    HttpClientModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
