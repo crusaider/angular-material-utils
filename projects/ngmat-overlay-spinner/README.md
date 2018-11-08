@@ -2,6 +2,8 @@
 
 A service that shows and hides a spinner on a overlay blocking user interactions as long as it is displayed.
 
+[Demo](https://crusaider.github.io/angular-material-utils/overlay-spinner)
+
 ## Installation
 
 `npm install --save ngmat-overlay-spinner`
@@ -34,9 +36,9 @@ A reference to a opened overlay spinner.
 
 #### Methods
 
-| `dismiss` |  |
-| --- | --- |
-| Hides removes the spinner overlay from view. | |
+| `dismiss`                                    |     |
+| -------------------------------------------- | --- |
+| Hides removes the spinner overlay from view. |     |
 
 ### Interfaces
 

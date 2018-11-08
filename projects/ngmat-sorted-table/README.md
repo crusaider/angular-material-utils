@@ -3,7 +3,7 @@
 A angular material component that renders tabular data and allows the user
 to sort the table by clicking the table headers.
 
-[Demo and example.](https://ngmat-sorted-table-demo.stackblitz.io)
+[Demo](https://crusaider.github.io/angular-material-utils/sorted-table)
 
 ## Installation
 
@@ -40,5 +40,3 @@ The component is themed according to angular material [custom component styling 
 
 1. Include the component theme in the application theme file `@import 'ngmat-sorted-table/theme';`
 1. Include the component theme mixin: `@include ngmat-sorted-table-theme($app-dark-theme);`
-
-Refer to the [demo and example.](https://ngmat-sorted-table-demo.stackblitz.io) for mor information.
