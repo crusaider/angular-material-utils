@@ -1,10 +1,9 @@
-<h1>Angular Material Utils</h1>
+<ng-container *ngIf="(toc$ | async) as toc">
+  <h1>Angular Material Utils</h1>
 
-<span class="mat-h2">Sorted Table</span><a mat-button routerLink="/sorted-table">Open demo</a>
-<p>A table component taking simple arrays as input and implementing sorting by letting the user click on
-  the table
-  headers.</p>
-
-<span class="mat-h2">Overlay Spinner</span><a mat-button routerLink="/overlay-spinner">Open demo</a>
-<p>A service that shows and hides a spinner on a overlay blocking user interactions as long as it is
-  displayed.</p>
+  <ng-container *ngFor="let item of toc">
+    <span class="mat-h2">{{ item.heading }}</span
+    ><a mat-button [routerLink]="'/' + item.slug">Open demo</a>
+    <p>{{ item.description }}</p>
+  </ng-container>
+</ng-container>

@@ -1,3 +1,4 @@
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { OverlaySpinnerDemoModule } from './overlay-spinner-demo/overlay-spinner-demo.module';
 import { SortedTableDemoModule } from './sorted-table-demo/sorted-table-demo.module';
 import { AppRoutingModule } from './app-routing.module';
@@ -32,7 +33,8 @@ import { HomeComponent } from './navigation/home/home.component';
     MatListModule,
     SortedTableDemoModule,
     MatMenuModule,
-    OverlaySpinnerDemoModule
+    OverlaySpinnerDemoModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
