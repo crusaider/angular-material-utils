@@ -1,6 +1,6 @@
 {
   "name": "ngmat-overlay-spinner",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "keywords": [
     "angular",
@@ -21,8 +21,8 @@
     "url": "https://github.com/crusaider/angular-material-utils"
   },
   "peerDependencies": {
-    "@angular/common": "^7.0.0",
-    "@angular/core": "^7.0.0",
-    "@angular/material": "~7.0.2"
+    "@angular/common": "^6.0.0 || ^7.0.0",
+    "@angular/core": "^6.0.0 || ^7.0.0",
+    "@angular/material": "^6.0.0 || ^7.0.0"
   }
 }
