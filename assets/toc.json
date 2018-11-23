@@ -1,0 +1,14 @@
+[
+  {
+    "heading": "Sorted Table",
+    "description": "A table component taking simple arrays as input and implementing sorting by letting the user click on the table headers.",
+    "packageName": "ngmat-sorted-table",
+    "slug": "sorted-table"
+  },
+  {
+    "heading": "Overlay Spinner",
+    "description": "A service that shows and hides a spinner on a overlay blocking user interactions as long as it is displayed.",
+    "packageName": "ngmat-overlay-spinner",
+    "slug": "overlay-spinner"
+  }
+]
